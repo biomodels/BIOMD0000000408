@@ -1,0 +1,1775 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" metaid="metaid_0000001" version="4">
+  <model id="Hettling2011" name="Hettling2011_CreatineKinase" metaid="metaid_0000002">
+    <notes>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+        <p>
+      This model is from the article:
+      <br/>
+        <strong> 	Analyzing the functional properties of the creatine kinase system with multiscale 'sloppy' modeling. 
+</strong>
+        <br/>
+Hettling H, van Beek JH 
+      <em>PLoS Comput Biol.</em>2011 Aug;7(8):e1002130.  
+      <a href="http://www.ncbi.nlm.nih.gov/pubmed/PMEDID">PMEDID</a>,
+      <br/>
+        <strong>Abstract:</strong>
+        <br/>
+In this study the function of the two isoforms of creatine kinase (CK; EC 2.7.3.2) in myocardium is investigated. The 'phosphocreatine shuttle' hypothesis states that mitochondrial and cytosolic CK plays a pivotal role in the transport of high-energy phosphate (HEP) groups from mitochondria to myofibrils in contracting muscle. Temporal buffering of changes in ATP and ADP is another potential role of CK. With a mathematical model, we analyzed energy transport and damping of high peaks of ATP hydrolysis during the cardiac cycle. The analysis was based on multiscale data measured at the level of isolated enzymes, isolated mitochondria and on dynamic response times of oxidative phosphorylation measured at the whole heart level. Using 'sloppy modeling' ensemble simulations, we derived confidence intervals for predictions of the contributions by phosphocreatine (PCr) and ATP to the transfer of HEP from mitochondria to sites of ATP hydrolysis. Our calculations indicate that only 15±8% (mean±SD) of transcytosolic energy transport is carried by PCr, contradicting the PCr shuttle hypothesis. We also predicted temporal buffering capabilities of the CK isoforms protecting against high peaks of ATP hydrolysis (3750 µM*s(-1)) in myofibrils. CK inhibition by 98% in silico leads to an increase in amplitude of mitochondrial ATP synthesis pulsation from 215±23 to 566±31 µM*s(-1), while amplitudes of oscillations in cytosolic ADP concentration double from 77±11 to 146±1 µM. Our findings indicate that CK acts as a large bandwidth high-capacity temporal energy buffer maintaining cellular ATP homeostasis and reducing oscillations in mitochondrial metabolism. However, the contribution of CK to the transport of high-energy phosphate groups appears limited. Mitochondrial CK activity lowers cytosolic inorganic phosphate levels while cytosolic CK has the opposite effect.
+   </p>
+        <p>This model originates from BioModels Database: A Database of Annotated Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2012 The BioModels.net Team.<br/>
+For more information see the <a href="http://www.ebi.ac.uk/biomodels/legal.html" target="_blank">terms of use</a>.<br/>
+To cite BioModels Database, please use: <a href="http://www.ncbi.nlm.nih.gov/pubmed/20587024" target="_blank">Li C, Donizelli M, Rodriguez N, Dharuri H, Endler L, Chelliah V, Li L, He E, Henry A, Stefan MI, Snoep JL, Hucka M, Le Novère N, Laibe C (2010) BioModels Database: An enhanced, curated and annotated resource for published quantitative kinetic models. BMC Syst Biol., 4:92.</a>
+      </p>
+    </body>
+  </notes>
+    <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000002">
+	<dc:creator>
+	<rdf:Bag>
+	<rdf:li rdf:parseType="Resource">
+	<vCard:N rdf:parseType="Resource">
+	<vCard:Family>Chelliah</vCard:Family>
+	<vCard:Given>Vijayalakshmi</vCard:Given>
+	</vCard:N>
+	<vCard:EMAIL>viji@ebi.ac.uk</vCard:EMAIL>
+	<vCard:ORG rdf:parseType="Resource">
+	<vCard:Orgname>EMBL-EBI</vCard:Orgname>
+	</vCard:ORG>
+	</rdf:li>
+	<rdf:li rdf:parseType="Resource">
+	<vCard:N rdf:parseType="Resource">
+	<vCard:Family>Hettling</vCard:Family>
+	<vCard:Given>Hannes</vCard:Given>
+	</vCard:N>
+	<vCard:EMAIL>hettling@few.vu.nl</vCard:EMAIL>
+	<vCard:ORG rdf:parseType="Resource">
+	<vCard:Orgname>VU University Amsterdam</vCard:Orgname>
+	</vCard:ORG>
+	</rdf:li>
+	</rdf:Bag>
+	</dc:creator>
+	<dcterms:created rdf:parseType="Resource">
+	<dcterms:W3CDTF>2012-01-26T13:59:48Z</dcterms:W3CDTF>
+	</dcterms:created>
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2014-05-26T21:24:48Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqmodel:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/biomodels.db/MODEL1201250000"/>
+	</rdf:Bag>
+	</bqmodel:is>
+	<bqmodel:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000408"/>
+	</rdf:Bag>
+	</bqmodel:is>
+	<bqmodel:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/pubmed/21912519"/>
+	</rdf:Bag>
+	</bqmodel:isDescribedBy>
+	<bqmodel:isDerivedFrom>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000041"/>
+	<rdf:li rdf:resource="http://identifiers.org/biomodels.db/MODEL1006230027"/>
+	</rdf:Bag>
+	</bqmodel:isDerivedFrom>
+	<bqbiol:occursIn>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/taxonomy/9984"/>
+	</rdf:Bag>
+	</bqbiol:occursIn>
+	<bqbiol:isVersionOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0046034"/>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0006600"/>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0044237"/>
+	</rdf:Bag>
+	</bqbiol:isVersionOf>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+      <listOfUnitDefinitions>
+      <unitDefinition id="micromole" metaid="metaid_0000003">
+        <listOfUnits>
+          <unit scale="-6" metaid="_566aacaf-55a9-4cae-bbb0-41a187f9b172" kind="mole"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="micromole_per_litre" metaid="metaid_0000004">
+        <listOfUnits>
+          <unit scale="-6" metaid="ceb27181-6145-4ccf-9144-0163e3d5975c" kind="mole"/>
+          <unit exponent="-1" metaid="_63cc353d-e639-42f9-a207-681f852d65ea" kind="litre"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="micromole_per_litre_per_second" metaid="metaid_0000005">
+        <listOfUnits>
+          <unit scale="-6" metaid="da9f7f4f-6bcb-4726-9123-0742632932c7" kind="mole"/>
+          <unit exponent="-1" metaid="_90c1cf79-d0e4-4e85-ac12-ebeef9efad63" kind="litre"/>
+          <unit exponent="-1" metaid="f70ccae4-f4c0-4efd-990a-db3da9ed62fe" kind="second"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="unitDefinition_0000004" name="per_minute" metaid="metaid_0000091">
+        <listOfUnits>
+          <unit exponent="-1" metaid="d034ecc2-2165-45e3-948e-1386b5738903" multiplier="60" kind="second"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="per_second" name="per_second" metaid="metaid_0000092">
+        <listOfUnits>
+          <unit exponent="-1" metaid="_7569a2be-dc97-4954-84ec-6ef76ff71188" kind="second"/>
+        </listOfUnits>
+      </unitDefinition>
+    </listOfUnitDefinitions>
+    <listOfCompartments>
+      <compartment id="IMS" name="IMS" metaid="metaid_0000054" size="0.0625">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000054">
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0005758"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </compartment>
+      <compartment id="CYT" name="CYT" metaid="metaid_0000055" size="0.75">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000055">
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0005829"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </compartment>
+      <compartment id="cell" name="cell" metaid="metaid_0000056" size="1">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000056">
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0005623"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </compartment>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="ADPi" initialConcentration="39" name="ADPi" metaid="metaid_0000057" substanceUnits="micromole" compartment="IMS">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000057">
+              <bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:16761"/>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.compound/C00008"/>
+	<rdf:li rdf:resource="http://identifiers.org/pubchem.substance/3310"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/3dmet/B01130"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="ATPi" initialConcentration="5626" name="ATPi" metaid="metaid_0000058" substanceUnits="micromole" compartment="IMS">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000058">
+              <bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:15422"/>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.compound/C00002"/>
+	<rdf:li rdf:resource="http://identifiers.org/pubchem.substance/3304"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/3dmet/B01125"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="Cri" initialConcentration="9789" name="Cri" metaid="metaid_0000059" substanceUnits="micromole" compartment="IMS">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000059">
+              <bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:16919"/>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.compound/C00300"/>
+	<rdf:li rdf:resource="http://identifiers.org/pubchem.substance/3594"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/3dmet/B00084"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="PCri" initialConcentration="5711" name="PCri" metaid="metaid_0000060" substanceUnits="micromole" compartment="IMS">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000060">
+              <bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:17287"/>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.compound/C02305"/>
+	<rdf:li rdf:resource="http://identifiers.org/pubchem.substance/5359"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/3dmet/B00422"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="PCr" initialConcentration="5710" name="PCr" metaid="metaid_0000061" substanceUnits="micromole" compartment="CYT">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000061">
+              <bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:17287"/>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.compound/C02305"/>
+	<rdf:li rdf:resource="http://identifiers.org/3dmet/B00422"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/pubchem.substance/5359"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="ADP" initialConcentration="64" name="ADP" metaid="metaid_0000062" substanceUnits="micromole" compartment="CYT">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000062">
+              <bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:16761"/>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.compound/C00008"/>
+	<rdf:li rdf:resource="http://identifiers.org/pubchem.substance/3310"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/3dmet/B01130"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="ATP" initialConcentration="5601" name="ATP" metaid="metaid_0000063" substanceUnits="micromole" compartment="CYT">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000063">
+              <bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:15422"/>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.compound/C00002"/>
+	<rdf:li rdf:resource="http://identifiers.org/pubchem.substance/3304"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/3dmet/B01125"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="Cr" initialConcentration="9789" name="Cr" metaid="metaid_0000064" substanceUnits="micromole" compartment="CYT">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000064">
+              <bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:16919"/>
+	<rdf:li rdf:resource="http://identifiers.org/kegg.compound/C00300"/>
+	<rdf:li rdf:resource="http://identifiers.org/pubchem.substance/3594"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/3dmet/B00084"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="P_ii" initialConcentration="910" name="P_ii" metaid="metaid_0000065" substanceUnits="micromole" compartment="IMS">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000065">
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:24838"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="P_i" initialConcentration="912" name="P_i" metaid="metaid_0000066" substanceUnits="micromole" compartment="CYT">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000066">
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:24838"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter id="j_diff_pcr" constant="false" metaid="metaid_0000067" value="1" units="micromole_per_litre_per_second">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Diffusion of phosphocreatine across the mitochondrial outer membrane</p>
+      </notes>
+      </parameter>
+      <parameter id="j_diff_atp" constant="false" metaid="metaid_0000068" value="1" units="micromole_per_litre_per_second">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Diffusion of ATP across the mitochondrial outer membrane</p>
+      </notes>
+      </parameter>
+      <parameter id="densyn" constant="false" metaid="metaid_0000069" value="0">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Denominator for ATP synthsis rearction term, see eq. A25 in van Beek, Am J Physiol Cell Physiol. 2007 Sep;293(3):C815-29</p>
+      </notes>
+      </parameter>
+      <parameter id="tmito" constant="false" metaid="metaid_0000070" value="0" units="second">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml"> Time constant of ATP synthesis time course in response to a step in ATP demand</p>
+      </notes>
+      </parameter>
+      <parameter id="vatpnorm" constant="false" metaid="metaid_0000071" value="0">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Normalized ATP production time course</p>
+      </notes>
+      </parameter>
+      <parameter id="jsyn" constant="false" metaid="metaid_0000072" value="0" units="micromole_per_litre_per_second">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">ATP synthesis time course</p>
+      </notes>
+      </parameter>
+      <parameter id="r_diff_pcr" constant="false" metaid="metaid_0000073" value="1">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Fraction of high-energy phosphate transported across the mitochondrial outer membrane via phosphocreatine</p>
+      </notes>
+      </parameter>
+      <parameter id="j_ck_mi" constant="false" name="j_ck_mi" metaid="metaid_0000074" value="0" units="micromole_per_litre_per_second">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Flux of mitochondrial creatine kinase reaction</p>
+      </notes>
+      </parameter>
+      <parameter id="j_ck_mm" constant="false" name="j_ck_mm" metaid="metaid_0000075" value="0" units="micromole_per_litre_per_second">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Flux of cytosolic creatine kinase reaction</p>
+      </notes>
+      </parameter>
+      <parameter id="j_diff_adp" constant="false" metaid="metaid_0000076" value="0" units="micromole_per_litre_per_second">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Diffusion of ADP across the mitochondrial outer membrane</p>
+      </notes>
+      </parameter>
+      <parameter id="j_diff_cr" constant="false" metaid="metaid_0000077" value="0" units="micromole_per_litre_per_second">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Diffusion of creatine across the mitochondrial outer membrane</p>
+      </notes>
+      </parameter>
+      <parameter id="j_diff_pi" constant="false" metaid="metaid_0000078" value="0" units="micromole_per_litre_per_second">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Diffusion of inorganic phosphate across the mitochondrial outer membrane</p>
+      </notes>
+      </parameter>
+      <parameter id="stepsize" metaid="metaid_0000006" value="0.001" units="second">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">stepsize for integration</p>
+      </notes>
+      </parameter>
+      <parameter id="phase" constant="false" metaid="metaid_0000007" value="0">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">phase of pulsatile ATP hydrolysis</p>
+      </notes>
+      </parameter>
+      <parameter id="heartrate_bpm" constant="false" metaid="metaid_0000008" value="135" units="unitDefinition_0000004">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Current heart rate</p>
+      </notes>
+      </parameter>
+      <parameter id="heartrate_basis" metaid="metaid_0000009" value="135" units="unitDefinition_0000004">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">heart rate at base condition (before heart rate gets altered)</p>
+      </notes>
+      </parameter>
+      <parameter id="heartrate_test" metaid="metaid_0000010" value="220" units="unitDefinition_0000004">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">heart rate at test condition</p>
+      </notes>
+      </parameter>
+      <parameter id="fracDia" constant="false" metaid="metaid_0000011" value="0.6666">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">fraction of time in the cardiac cycle where diastole takes place </p>
+      </notes>
+      </parameter>
+      <parameter id="fracSysUp" metaid="metaid_0000012" value="0.1666666666">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">fraction of time in the cardiac cycle where systole takes place and where the energy demand is still increasing (before the energy consumption peak)</p>
+      </notes>
+      </parameter>
+      <parameter id="fracSysDown" metaid="metaid_0000013" value="0.1666666666">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">fraction of time in the cardiac cycle where systole takes place and where the energy demand is decreasing (after the energy consumption peak)</p>
+      </notes>
+      </parameter>
+      <parameter id="VhydAmp_basis" constant="false" metaid="metaid_0000014" value="2918.41631673665" units="micromole_per_litre_per_second">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Amplitude of ATP hydrolysis time course at base condition (lower heart rate)</p>
+      </notes>
+      </parameter>
+      <parameter id="VhydAmp_test" constant="false" metaid="metaid_0000015" value="3764.84703059388" units="micromole_per_litre_per_second">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Amplitude of ATP hydrolysis time course at test condition (elevated heart rate)</p>
+      </notes>
+      </parameter>
+      <parameter id="time_Jhyd_step" name="time_Jhyd_step" metaid="metaid_0000016" value="40" units="second">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Time point in simulation, where the heart rate is increased (base condition to test condition)</p>
+      </notes>
+      </parameter>
+      <parameter id="Jhyd_test" constant="false" name="Jhyd_test" metaid="metaid_0000017" value="627.6" units="micromole_per_litre_per_second">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Average rate of ATP hydrolysis at test condition</p>
+      </notes>
+      </parameter>
+      <parameter id="Jhyd_basis" name="Jhyd_basis" metaid="metaid_0000018" value="486.5" units="micromole_per_litre_per_second">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Average ATP hydrolysis at base condition</p>
+      </notes>
+      </parameter>
+      <parameter id="last_time_fired" constant="false" metaid="metaid_0000019" value="0" units="second">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Last time in simulation where the 'pulsatile' event took place</p>
+      </notes>
+      </parameter>
+      <parameter id="Jhyd" constant="false" name="Jhyd" metaid="metaid_0000020" value="486.5" units="micromole_per_litre_per_second">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Time course of ATP hydrolysis</p>
+      </notes>
+      </parameter>
+      <parameter id="ck_factor_iaa" name="ck_factor_iaa" metaid="metaid_0000021" value="1">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Factor of inhibition of creatine kinase reaction when the heart is exposed to iodoacetic acid (IAA)</p>
+      </notes>
+      </parameter>
+      <parameter id="ck_factor_ia" name="ck_factor_ia" metaid="metaid_0000022" value="0.0286">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Factor of inhibition of creatine kinase reaction when the heart is exposed to iodoacetamide (IA)</p>
+      </notes>
+      </parameter>
+      <parameter id="tmito_factor" constant="false" name="tmito_factor" metaid="metaid_0000023" value="0">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Internal parameter for tmito calculation. Value is zero in base condition, otherwise one </p>
+      </notes>
+      </parameter>
+      <parameter id="PSmomATP" name="PSmomATP" metaid="metaid_0000024" value="13.29477" units="per_second">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Permeability surface product for the permeability of the outer mitochondrial membrane to ATP and ADP</p>
+      </notes>
+      </parameter>
+      <parameter id="K_CK_eq" name="K_CK_eq" metaid="metaid_0000025" value="152">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Equilibrium constant for Mi-CK and MM-CK</p>
+      </notes>
+      </parameter>
+      <parameter id="VmaxMMb" constant="false" metaid="metaid_0000026" value="4.63035434543713E4" units="micromole_per_litre_per_second">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Maximum velocity MM-CK (PCr production)</p>
+      </notes>
+      </parameter>
+      <parameter id="VmaxMib" constant="false" metaid="metaid_0000027" value="3520.34110227692" units="micromole_per_litre_per_second">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Maximum velocity Mi-CK (ATP production)</p>
+      </notes>
+      </parameter>
+      <parameter id="VmaxMif_full_activity" metaid="metaid_0000031" value="882.0756" units="micromole_per_litre_per_second">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Maximum velocity Mi-CK (PCr production) without any inhibition by IAA of IA</p>
+      </notes>
+      </parameter>
+      <parameter id="VmaxMMf_full_activity" metaid="metaid_0000032" value="1.144178E4" units="micromole_per_litre_per_second">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Maximum velocity MM-CK (ATP production) without inhibition by IA or IAA</p>
+      </notes>
+      </parameter>
+      <parameter id="VmaxMif" constant="false" metaid="metaid_0000033" value="882.0756" units="micromole_per_litre_per_second">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Maximum velocity Mi-CK (PCr production)</p>
+      </notes>
+      </parameter>
+      <parameter id="VmaxMMf" constant="false" metaid="metaid_0000034" value="1.144178E4" units="micromole_per_litre_per_second">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Maximum velocity MM-CK (ATP production)</p>
+      </notes>
+      </parameter>
+      <parameter id="KiaMi" metaid="metaid_0000035" value="750" units="micromole_per_litre">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Binary dissociation constant ATP</p>
+      </notes>
+      </parameter>
+      <parameter id="KbMi" metaid="metaid_0000036" value="5200" units="micromole_per_litre">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Ternary dissociation constant Cr</p>
+      </notes>
+      </parameter>
+      <parameter id="KicMi" metaid="metaid_0000037" value="204.8" units="micromole_per_litre">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Binary dissociation constant ADP</p>
+      </notes>
+      </parameter>
+      <parameter id="KdMi" metaid="metaid_0000038" value="500" units="micromole_per_litre">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Ternary dissociation constant PCr</p>
+      </notes>
+      </parameter>
+      <parameter id="KibMi" metaid="metaid_0000039" value="28800" units="micromole_per_litre">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Binary dissociation constant Cr</p>
+      </notes>
+      </parameter>
+      <parameter id="KidMi" metaid="metaid_0000040" value="1600" units="micromole_per_litre">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Binary dissociation constant PCr</p>
+      </notes>
+      </parameter>
+      <parameter id="KiaMM" metaid="metaid_0000041" value="900" units="micromole_per_litre">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Binary dissociation constant ATP</p>
+      </notes>
+      </parameter>
+      <parameter id="KbMM" metaid="metaid_0000042" value="15500" units="micromole_per_litre">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Ternary dissociation constant Cr</p>
+      </notes>
+      </parameter>
+      <parameter id="KicMM" metaid="metaid_0000043" value="222.4" units="micromole_per_litre">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Binary dissociation constant ADP</p>
+      </notes>
+      </parameter>
+      <parameter id="KdMM" metaid="metaid_0000044" value="1670" units="micromole_per_litre">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Ternary dissociation constant PCr</p>
+      </notes>
+      </parameter>
+      <parameter id="KibMM" metaid="metaid_0000045" value="34900" units="micromole_per_litre">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Binary dissociation constant Cr</p>
+      </notes>
+      </parameter>
+      <parameter id="KidMM" metaid="metaid_0000046" value="4730" units="micromole_per_litre">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Binary dissociation constant PCr</p>
+      </notes>
+      </parameter>
+      <parameter id="Vmaxsyn" name="Vmaxsyn" metaid="metaid_0000047" value="1503.74" units="micromole_per_litre_per_second">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Maximum ATP synthesis velocity</p>
+      </notes>
+      </parameter>
+      <parameter id="Kadp" name="Kadp" metaid="metaid_0000048" value="25" units="micromole_per_litre">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Apparent Km mitochondria for ADP</p>
+      </notes>
+      </parameter>
+      <parameter id="Kpi" name="Kpi" metaid="metaid_0000049" value="800" units="micromole_per_litre">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Apparent Km mitochondria for inorganic phosphate</p>
+      </notes>
+      </parameter>
+      <parameter id="PSmomPi" name="PSmomPi" metaid="metaid_0000050" value="194" units="per_second">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Permeability surface product for the permeability of the outer mitochondrial membrane to inorganic phosphate</p>
+      </notes>
+      </parameter>
+      <parameter id="PSmomCr" name="PSmomCr" metaid="metaid_0000051" value="155" units="per_second">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Permeability surface product for the permeability of the outer mitochondrial membrane to creatine</p>
+      </notes>
+      </parameter>
+      <parameter id="PSmomPCr" name="PSmomPCr" metaid="metaid_0000052" value="155" units="per_second">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">Permeability surface product for the permeability of the outer mitochondrial membrane to phosphocreatine</p>
+      </notes>
+      </parameter>
+      <parameter id="pulsatility" constant="false" name="pulsatility" metaid="metaid_0000053" value="1">
+        <notes>
+        <p xmlns="http://www.w3.org/1999/xhtml">1 if simulation with pulsatile ATP hydrolysis function is desired, otherwise 0</p>
+      </notes>
+      </parameter>
+    </listOfParameters>
+    <listOfRules>
+      <rateRule metaid="metaid_0000112" variable="tmito">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">        
+          <ci> vatpnorm </ci>
+        </math>
+            </rateRule>
+      <assignmentRule metaid="metaid_0000093" variable="densyn">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">        
+          <apply>
+            <plus/>
+            <cn type="integer"> 1 </cn>
+            <apply>
+              <divide/>
+              <ci> ADPi </ci>
+              <ci> Kadp </ci>
+            </apply>
+            <apply>
+              <divide/>
+              <ci> P_ii </ci>
+              <ci> Kpi </ci>
+            </apply>
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> ADPi </ci>
+                <ci> P_ii </ci>
+              </apply>
+              <apply>
+                <times/>
+                <ci> Kadp </ci>
+                <ci> Kpi </ci>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+            </assignmentRule>
+      <assignmentRule metaid="metaid_0000094" variable="jsyn">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">        
+          <apply>
+            <times/>
+            <ci> Vmaxsyn </ci>
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> ADPi </ci>
+                <ci> P_ii </ci>
+              </apply>
+              <apply>
+                <times/>
+                <ci> Kpi </ci>
+                <ci> Kadp </ci>
+                <ci> densyn </ci>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+            </assignmentRule>
+      <assignmentRule metaid="metaid_0000095" variable="vatpnorm">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">        
+          <apply>
+            <times/>
+            <ci> tmito_factor </ci>
+            <apply>
+              <divide/>
+              <apply>
+                <minus/>
+                <ci> Jhyd_test </ci>
+                <ci> jsyn </ci>
+              </apply>
+              <apply>
+                <minus/>
+                <ci> Jhyd_test </ci>
+                <ci> Jhyd_basis </ci>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+            </assignmentRule>
+      <assignmentRule metaid="metaid_0000096" variable="VmaxMif">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">        
+          <apply>
+            <times/>
+            <ci> VmaxMif_full_activity </ci>
+            <ci> ck_factor_iaa </ci>
+          </apply>
+        </math>
+            </assignmentRule>
+      <assignmentRule metaid="metaid_0000097" variable="VmaxMMf">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">        
+          <apply>
+            <times/>
+            <ci> VmaxMMf_full_activity </ci>
+            <ci> ck_factor_iaa </ci>
+          </apply>
+        </math>
+            </assignmentRule>
+      <assignmentRule metaid="metaid_0000098" variable="VmaxMib">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">        
+          <apply>
+            <divide/>
+            <apply>
+              <times/>
+              <ci> K_CK_eq </ci>
+              <ci> KicMi </ci>
+              <ci> KdMi </ci>
+              <ci> VmaxMif </ci>
+            </apply>
+            <apply>
+              <times/>
+              <ci> KiaMi </ci>
+              <ci> KbMi </ci>
+            </apply>
+          </apply>
+        </math>
+            </assignmentRule>
+      <assignmentRule metaid="metaid_0000099" variable="VmaxMMb">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">        
+          <apply>
+            <divide/>
+            <apply>
+              <times/>
+              <ci> K_CK_eq </ci>
+              <ci> KicMM </ci>
+              <ci> KdMM </ci>
+              <ci> VmaxMMf </ci>
+            </apply>
+            <apply>
+              <times/>
+              <ci> KiaMM </ci>
+              <ci> KbMM </ci>
+            </apply>
+          </apply>
+        </math>
+            </assignmentRule>
+      <assignmentRule metaid="metaid_0000100" variable="j_diff_pcr">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">        
+          <apply>
+            <times/>
+            <ci> PSmomPCr </ci>
+            <apply>
+              <minus/>
+              <ci> PCri </ci>
+              <ci> PCr </ci>
+            </apply>
+          </apply>
+        </math>
+            </assignmentRule>
+      <assignmentRule metaid="metaid_0000101" variable="j_diff_atp">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">        
+          <apply>
+            <times/>
+            <ci> PSmomATP </ci>
+            <apply>
+              <minus/>
+              <ci> ATPi </ci>
+              <ci> ATP </ci>
+            </apply>
+          </apply>
+        </math>
+            </assignmentRule>
+      <assignmentRule metaid="metaid_0000102" variable="r_diff_pcr">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">        
+          <apply>
+            <divide/>
+            <ci> j_diff_pcr </ci>
+            <apply>
+              <plus/>
+              <ci> j_diff_pcr </ci>
+              <ci> j_diff_atp </ci>
+            </apply>
+          </apply>
+        </math>
+            </assignmentRule>
+      <assignmentRule metaid="metaid_0000103" variable="phase">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">        
+          <apply>
+            <divide/>
+            <apply>
+              <minus/>
+              <apply>
+                <abs/>
+                <apply>
+                  <minus/>
+                  <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> t </csymbol>
+                  <ci> time_Jhyd_step </ci>
+                </apply>
+              </apply>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <apply>
+                    <floor/>
+                    <apply>
+                      <divide/>
+                      <apply>
+                        <abs/>
+                        <apply>
+                          <minus/>
+                          <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> t </csymbol>
+                          <ci> time_Jhyd_step </ci>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <divide/>
+                        <cn type="integer"> 60 </cn>
+                        <ci> heartrate_bpm </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                  <cn type="integer"> 60 </cn>
+                </apply>
+                <ci> heartrate_bpm </ci>
+              </apply>
+            </apply>
+            <apply>
+              <divide/>
+              <cn type="integer"> 60 </cn>
+              <ci> heartrate_bpm </ci>
+            </apply>
+          </apply>
+        </math>
+            </assignmentRule>
+      <assignmentRule metaid="metaid_0000104" variable="fracDia">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">        
+          <apply>
+            <minus/>
+            <apply>
+              <minus/>
+              <cn type="integer"> 1 </cn>
+              <ci> fracSysUp </ci>
+            </apply>
+            <ci> fracSysDown </ci>
+          </apply>
+        </math>
+            </assignmentRule>
+      <assignmentRule metaid="metaid_0000105" variable="VhydAmp_basis">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">        
+          <apply>
+            <divide/>
+            <apply>
+              <times/>
+              <cn type="integer"> 2 </cn>
+              <ci> Jhyd_basis </ci>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> fracSysUp </ci>
+              <ci> fracSysDown </ci>
+            </apply>
+          </apply>
+        </math>
+            </assignmentRule>
+      <assignmentRule metaid="metaid_0000106" variable="VhydAmp_test">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">        
+          <apply>
+            <divide/>
+            <apply>
+              <times/>
+              <cn type="integer"> 2 </cn>
+              <ci> Jhyd_test </ci>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> fracSysUp </ci>
+              <ci> fracSysDown </ci>
+            </apply>
+          </apply>
+        </math>
+            </assignmentRule>
+      <assignmentRule metaid="metaid_0000107" variable="j_ck_mi">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">        
+          <apply>
+            <divide/>
+            <apply>
+              <minus/>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> VmaxMif </ci>
+                  <ci> ATPi </ci>
+                  <ci> Cri </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> KiaMi </ci>
+                  <ci> KbMi </ci>
+                </apply>
+              </apply>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> VmaxMib </ci>
+                  <ci> ADPi </ci>
+                  <ci> PCri </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> KicMi </ci>
+                  <ci> KdMi </ci>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <cn type="integer"> 1 </cn>
+              <apply>
+                <divide/>
+                <ci> Cri </ci>
+                <ci> KibMi </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> PCri </ci>
+                <ci> KidMi </ci>
+              </apply>
+              <apply>
+                <times/>
+                <ci> ATPi </ci>
+                <apply>
+                  <plus/>
+                  <apply>
+                    <divide/>
+                    <cn type="integer"> 1 </cn>
+                    <ci> KiaMi </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <ci> Cri </ci>
+                    <apply>
+                      <times/>
+                      <ci> KiaMi </ci>
+                      <ci> KbMi </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> ADPi </ci>
+                <apply>
+                  <plus/>
+                  <apply>
+                    <divide/>
+                    <cn type="integer"> 1 </cn>
+                    <ci> KicMi </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <ci> Cri </ci>
+                    <apply>
+                      <times/>
+                      <ci> KicMi </ci>
+                      <ci> KibMi </ci>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <ci> PCri </ci>
+                    <apply>
+                      <times/>
+                      <ci> KidMi </ci>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <ci> KicMi </ci>
+                          <ci> KdMi </ci>
+                        </apply>
+                        <ci> KidMi </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+            </assignmentRule>
+      <assignmentRule metaid="metaid_0000108" variable="j_ck_mm">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">        
+          <apply>
+            <divide/>
+            <apply>
+              <minus/>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> VmaxMMf </ci>
+                  <ci> ATP </ci>
+                  <ci> Cr </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> KiaMM </ci>
+                  <ci> KbMM </ci>
+                </apply>
+              </apply>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> VmaxMMb </ci>
+                  <ci> ADP </ci>
+                  <ci> PCr </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> KicMM </ci>
+                  <ci> KdMM </ci>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <cn type="integer"> 1 </cn>
+              <apply>
+                <divide/>
+                <ci> Cr </ci>
+                <ci> KibMM </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> PCr </ci>
+                <ci> KidMM </ci>
+              </apply>
+              <apply>
+                <times/>
+                <ci> ATP </ci>
+                <apply>
+                  <plus/>
+                  <apply>
+                    <divide/>
+                    <cn type="integer"> 1 </cn>
+                    <ci> KiaMM </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <ci> Cr </ci>
+                    <apply>
+                      <times/>
+                      <ci> KiaMM </ci>
+                      <ci> KbMM </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> ADP </ci>
+                <apply>
+                  <plus/>
+                  <apply>
+                    <divide/>
+                    <cn type="integer"> 1 </cn>
+                    <ci> KicMM </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <ci> Cr </ci>
+                    <apply>
+                      <times/>
+                      <ci> KicMM </ci>
+                      <ci> KibMM </ci>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <ci> PCr </ci>
+                    <apply>
+                      <times/>
+                      <ci> KidMM </ci>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <times/>
+                          <ci> KicMM </ci>
+                          <ci> KdMM </ci>
+                        </apply>
+                        <ci> KidMM </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+            </assignmentRule>
+      <assignmentRule metaid="metaid_0000109" variable="j_diff_adp">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">        
+          <apply>
+            <times/>
+            <ci> PSmomATP </ci>
+            <apply>
+              <minus/>
+              <ci> ADPi </ci>
+              <ci> ADP </ci>
+            </apply>
+          </apply>
+        </math>
+            </assignmentRule>
+      <assignmentRule metaid="metaid_0000110" variable="j_diff_pi">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">        
+          <apply>
+            <times/>
+            <ci> PSmomPi </ci>
+            <apply>
+              <minus/>
+              <ci> P_ii </ci>
+              <ci> P_i </ci>
+            </apply>
+          </apply>
+        </math>
+            </assignmentRule>
+      <assignmentRule metaid="metaid_0000111" variable="j_diff_cr">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">        
+          <apply>
+            <times/>
+            <ci> PSmomCr </ci>
+            <apply>
+              <minus/>
+              <ci> Cri </ci>
+              <ci> Cr </ci>
+            </apply>
+          </apply>
+        </math>
+            </assignmentRule>
+    </listOfRules>
+    <listOfReactions>
+      <reaction id="Jsyn" metaid="metaid_0000079">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000079">
+              <bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0006754"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0006757"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfReactants>
+          <speciesReference species="P_ii" metaid="f71c5c1a-580d-43fd-8ff4-02daa9d14232"/>
+          <speciesReference species="ADPi" metaid="_954c5103-07d3-4c63-aa2a-a1a022bc427b"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="ATPi" metaid="_6012af10-340e-43b9-93da-87818b61b5c1"/>
+        </listOfProducts>
+        <kineticLaw metaid="c340cf47-1824-47d7-891c-24642701a0e6">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> Vmaxsyn </ci>
+                <ci> ADPi </ci>
+                <ci> P_ii </ci>
+              </apply>
+              <apply>
+                <times/>
+                <ci> Kadp </ci>
+                <ci> Kpi </ci>
+                <apply>
+                  <plus/>
+                  <cn type="integer"> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <ci> ADPi </ci>
+                    <ci> Kadp </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <ci> P_ii </ci>
+                    <ci> Kpi </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <ci> ADPi </ci>
+                      <ci> P_ii </ci>
+                    </apply>
+                    <apply>
+                      <times/>
+                      <ci> Kadp </ci>
+                      <ci> Kpi </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+                </kineticLaw>
+      </reaction>
+      <reaction id="J_CK_Mi" metaid="metaid_0000080">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000080">
+              <bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/ec-code/2.7.3.2"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0004111"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfReactants>
+          <speciesReference species="ATPi" metaid="_93cc2537-0235-4a65-b06f-924b596b2c08"/>
+          <speciesReference species="Cri" metaid="dc9a4c62-96e4-4e99-ae57-03cfc950badb"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="PCri" metaid="_061e7333-78d4-43d2-892a-0ecb0811d87c"/>
+          <speciesReference species="ADPi" metaid="_87fee1b1-f710-4251-a143-23a28c674e27"/>
+        </listOfProducts>
+        <kineticLaw metaid="_7ccfc8eb-160d-4f7f-b87f-fe51c9c99d37">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <ci> j_ck_mi </ci>
+          </math>
+                </kineticLaw>
+      </reaction>
+      <reaction id="J_CK_MM" metaid="metaid_0000081">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000081">
+              <bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/ec-code/2.7.3.2"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0004111"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfReactants>
+          <speciesReference species="Cr" metaid="_5ed76105-2cf9-4af8-9e40-ae82e315a143"/>
+          <speciesReference species="ATP" metaid="_8dd0f197-2ae2-4f64-9b5d-be7ab521c05b"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="PCr" metaid="_5f71dcf2-4202-4880-a87b-c6699fc7ace1"/>
+          <speciesReference species="ADP" metaid="a681bcd6-b426-4cde-84ca-0e2a81982307"/>
+        </listOfProducts>
+        <kineticLaw metaid="_67ee0846-6cb1-4626-b5f8-7bad4bb315b7">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <ci> j_ck_mm </ci>
+          </math>
+                </kineticLaw>
+      </reaction>
+      <reaction id="Jhyd_reaction" metaid="metaid_0000082">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000082">
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/ec-code/3.6.4.1"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfReactants>
+          <speciesReference species="ATP" metaid="_4ee6a15e-c748-4c8f-bce4-f47265b63dfc"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="ADP" metaid="_3e11e5cf-929a-4537-bffb-bdac15672cdd"/>
+          <speciesReference species="P_i" metaid="e0de3b3f-6ead-400c-815c-e679074c0fcb"/>
+        </listOfProducts>
+        <kineticLaw metaid="b2297b16-927f-4354-8bb6-41f42b464171">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <ci> Jhyd </ci>
+          </math>
+                </kineticLaw>
+      </reaction>
+      <reaction id="J_diff_Pi" metaid="metaid_0000083">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000083">
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0006817"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfReactants>
+          <speciesReference species="P_ii" metaid="_99777dcc-4adb-4189-bfd0-9b5006e95085"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="P_i" metaid="_091d14b4-3892-4878-9d43-be306182c87e"/>
+        </listOfProducts>
+        <kineticLaw metaid="_3724a902-8d88-4c84-8534-870a3ee23dc4">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <ci> j_diff_pi </ci>
+          </math>
+                </kineticLaw>
+      </reaction>
+      <reaction id="J_diff_Cr" metaid="metaid_0000084">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000084">
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0015881"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfReactants>
+          <speciesReference species="Cri" metaid="_67d01ce1-3837-43ae-bdcb-15e805e973e1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Cr" metaid="_8263d9c9-ce63-47dd-a5e0-39e90ab98b1b"/>
+        </listOfProducts>
+        <kineticLaw metaid="f166ecb2-37e9-44d3-84d1-7904e3e5e6ea">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <ci> j_diff_cr </ci>
+          </math>
+                </kineticLaw>
+      </reaction>
+      <reaction id="J_diff_ADP" metaid="metaid_0000085">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000085">
+              <bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0051503"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0015866"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfReactants>
+          <speciesReference species="ADPi" metaid="b1b42035-6f7c-4232-90ed-17d680e182b0"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="ADP" metaid="_0bdbbdf2-b2b8-48cb-8ee8-7a90ef9d5737"/>
+        </listOfProducts>
+        <kineticLaw metaid="_2e3c3c09-cbb6-4eba-9b61-32cb94efeeb4">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <ci> j_diff_adp </ci>
+          </math>
+                </kineticLaw>
+      </reaction>
+      <reaction id="J_diff_PCr" metaid="metaid_0000086">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000086">
+              <bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0006810"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0015881"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfReactants>
+          <speciesReference species="PCri" metaid="_25f1569d-a898-45b3-a2b0-13bec3207fd8"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="PCr" metaid="d1c42bb0-3e11-49e2-9215-d68faf63f362"/>
+        </listOfProducts>
+        <kineticLaw metaid="_368c9e8e-a4c5-43d0-80e6-473a27bd810d">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <ci> j_diff_pcr </ci>
+          </math>
+                </kineticLaw>
+      </reaction>
+      <reaction id="J_diff_ATP" metaid="metaid_0000087">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000087">
+              <bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0015867"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0051503"/>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0006810"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <listOfReactants>
+          <speciesReference species="ATPi" metaid="_2ecdc37d-0e48-4983-9acf-f4499fd4666f"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="ATP" metaid="_14ea9e34-dea3-4e78-a4d1-677acdddc25c"/>
+        </listOfProducts>
+        <kineticLaw metaid="_013dafb0-fb04-4bda-bc59-5e1142bc7c2f">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <ci> j_diff_atp </ci>
+          </math>
+                </kineticLaw>
+      </reaction>
+    </listOfReactions>
+    <listOfEvents>
+      <event name="pulsatile_test" metaid="metaid_0000088">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#metaid_0000088">
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/sgd/S000028563"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+              <trigger metaid="_1a6855f1-3d8c-4074-8a59-378178b12b44">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <and/>
+              <apply>
+                <and/>
+                <apply>
+                  <geq/>
+                  <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> t </csymbol>
+                  <ci> time_Jhyd_step </ci>
+                </apply>
+                <apply>
+                  <gt/>
+                  <apply>
+                    <minus/>
+                    <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> t </csymbol>
+                    <ci> last_time_fired </ci>
+                  </apply>
+                  <ci> stepsize </ci>
+                </apply>
+              </apply>
+              <apply>
+                <eq/>
+                <ci> pulsatility </ci>
+                <cn type="integer"> 1 </cn>
+              </apply>
+            </apply>
+          </math>
+                </trigger>
+        <delay metaid="_15d0f3bb-580e-4b14-be51-ae9f4a4e1543">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <cn type="integer"> 0 </cn>
+          </math>
+                </delay>
+        <listOfEventAssignments>
+          <eventAssignment metaid="_6d967c34-b59d-4039-9f96-26d614261559" variable="Jhyd">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <piecewise>
+                <piece>
+                  <apply>
+                    <times/>
+                    <apply>
+                      <minus/>
+                      <cn type="integer"> 1 </cn>
+                      <apply>
+                        <divide/>
+                        <apply>
+                          <minus/>
+                          <ci> phase </ci>
+                          <ci> fracSysUp </ci>
+                        </apply>
+                        <ci> fracSysDown </ci>
+                      </apply>
+                    </apply>
+                    <ci> VhydAmp_test </ci>
+                  </apply>
+                  <apply>
+                    <and/>
+                    <apply>
+                      <gt/>
+                      <ci> phase </ci>
+                      <ci> fracSysUp </ci>
+                    </apply>
+                    <apply>
+                      <leq/>
+                      <ci> phase </ci>
+                      <apply>
+                        <minus/>
+                        <cn type="integer"> 1 </cn>
+                        <ci> fracDia </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                </piece>
+                <piece>
+                  <apply>
+                    <times/>
+                    <apply>
+                      <divide/>
+                      <ci> phase </ci>
+                      <ci> fracSysUp </ci>
+                    </apply>
+                    <ci> VhydAmp_test </ci>
+                  </apply>
+                  <apply>
+                    <leq/>
+                    <ci> phase </ci>
+                    <ci> fracSysUp </ci>
+                  </apply>
+                </piece>
+                <piece>
+                  <cn type="integer"> 0 </cn>
+                  <apply>
+                    <geq/>
+                    <ci> phase </ci>
+                    <apply>
+                      <minus/>
+                      <cn type="integer"> 1 </cn>
+                      <ci> fracDia </ci>
+                    </apply>
+                  </apply>
+                </piece>
+                <otherwise>
+                  <ci> Jhyd </ci>
+                </otherwise>
+              </piecewise>
+            </math>
+                    </eventAssignment>
+          <eventAssignment metaid="d6b8e6e0-acb2-442a-9384-e0fc0e81fd16" variable="last_time_fired">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> t </csymbol>
+            </math>
+                    </eventAssignment>
+        </listOfEventAssignments>
+      </event>
+      <event name="pulsatile_basis" metaid="metaid_0000089">
+        <trigger metaid="_0a2c86b0-a41d-4a62-a74b-35e66f2eb81a">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <and/>
+              <apply>
+                <and/>
+                <apply>
+                  <lt/>
+                  <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> t </csymbol>
+                  <ci> time_Jhyd_step </ci>
+                </apply>
+                <apply>
+                  <geq/>
+                  <apply>
+                    <minus/>
+                    <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> t </csymbol>
+                    <ci> last_time_fired </ci>
+                  </apply>
+                  <ci> stepsize </ci>
+                </apply>
+              </apply>
+              <apply>
+                <eq/>
+                <ci> pulsatility </ci>
+                <cn type="integer"> 1 </cn>
+              </apply>
+            </apply>
+          </math>
+                </trigger>
+        <delay metaid="_6c999806-47c3-47a9-a5dd-1e95e401a0e2">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <cn type="integer"> 0 </cn>
+          </math>
+                </delay>
+        <listOfEventAssignments>
+          <eventAssignment metaid="_598aabd8-a9b2-4818-81f3-57d057c82343" variable="Jhyd">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <piecewise>
+                <piece>
+                  <cn type="integer"> 0 </cn>
+                  <apply>
+                    <leq/>
+                    <ci> phase </ci>
+                    <ci> fracDia </ci>
+                  </apply>
+                </piece>
+                <piece>
+                  <apply>
+                    <times/>
+                    <apply>
+                      <divide/>
+                      <apply>
+                        <minus/>
+                        <ci> phase </ci>
+                        <ci> fracDia </ci>
+                      </apply>
+                      <ci> fracSysDown </ci>
+                    </apply>
+                    <ci> VhydAmp_basis </ci>
+                  </apply>
+                  <apply>
+                    <and/>
+                    <apply>
+                      <gt/>
+                      <ci> phase </ci>
+                      <ci> fracDia </ci>
+                    </apply>
+                    <apply>
+                      <leq/>
+                      <ci> phase </ci>
+                      <apply>
+                        <minus/>
+                        <cn type="integer"> 1 </cn>
+                        <ci> fracSysUp </ci>
+                      </apply>
+                    </apply>
+                  </apply>
+                </piece>
+                <piece>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <apply>
+                        <minus/>
+                        <cn type="integer"> 1 </cn>
+                        <ci> phase </ci>
+                      </apply>
+                      <ci> VhydAmp_basis </ci>
+                    </apply>
+                    <ci> fracSysUp </ci>
+                  </apply>
+                  <apply>
+                    <gt/>
+                    <ci> phase </ci>
+                    <apply>
+                      <minus/>
+                      <cn type="integer"> 1 </cn>
+                      <ci> fracSysUp </ci>
+                    </apply>
+                  </apply>
+                </piece>
+                <otherwise>
+                  <ci> Jhyd </ci>
+                </otherwise>
+              </piecewise>
+            </math>
+                    </eventAssignment>
+          <eventAssignment metaid="_3ab3f030-e437-44b7-9a48-d716fd9a95b9" variable="last_time_fired">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> t </csymbol>
+            </math>
+                    </eventAssignment>
+        </listOfEventAssignments>
+      </event>
+      <event name="nonpulsatile_step" metaid="metaid_0000090">
+        <trigger metaid="_9dfee9d9-9224-492e-918f-02d6509e1c20">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <geq/>
+              <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> t </csymbol>
+              <ci> time_Jhyd_step </ci>
+            </apply>
+          </math>
+                </trigger>
+        <delay metaid="_11caad75-fb26-43e6-b23e-0f9104a99961">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <cn type="integer"> 0 </cn>
+          </math>
+                </delay>
+        <listOfEventAssignments>
+          <eventAssignment metaid="_2c530be2-ce5f-4471-9679-091f9726683d" variable="Jhyd">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <piecewise>
+                <piece>
+                  <ci> Jhyd_test </ci>
+                  <apply>
+                    <eq/>
+                    <ci> pulsatility </ci>
+                    <cn type="integer"> 0 </cn>
+                  </apply>
+                </piece>
+                <otherwise>
+                  <ci> Jhyd </ci>
+                </otherwise>
+              </piecewise>
+            </math>
+                    </eventAssignment>
+          <eventAssignment metaid="_4f177da1-96fe-4dbe-97db-f6cd7ac6e522" variable="heartrate_bpm">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <ci> heartrate_test </ci>
+            </math>
+                    </eventAssignment>
+          <eventAssignment metaid="_71f5d5c9-9f36-4167-85eb-2c800ccdd17c" variable="tmito_factor">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <cn type="integer"> 1 </cn>
+            </math>
+                    </eventAssignment>
+        </listOfEventAssignments>
+      </event>
+    </listOfEvents>
+  </model>
+</sbml>
